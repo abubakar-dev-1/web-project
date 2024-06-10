@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+.nav2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.nav2 .sec1 {
+    display: flex;
+    gap: 20px;
+    margin-left: 40px;
+    transition: all 500ms ease-in-out;    
+
+}
+.nav2 .sec1 a{
+    text-decoration: none;
+    color: #153a5b;
+    font-family: "Raleway";
+    font-weight: bolder;
+}
+.nav2 .sec3 a{
+    text-decoration: none;
+    color: #153a5b;
+}
+
+.nav2 .sec3 {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin-right: 50px;
+    font-family: "Raleway";
+    font-weight: bolder;
+    vertical-align: middle;
+}
+.nav2 .sec-center img{
+    padding-top: 10px;
+    width: 60%;
+}
+.nav2 .sec-center{
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width:1024px) {
+    #hambar{
+        display: initial;
+    }
+    .nav2 .sec1 {
+        background: white;
+        flex-direction: column;
+        position: absolute;
+        top: 79px;
+        z-index: 1;
+        margin: 0;
+        right: 0;
+        padding: 30px;
+        display: none;
+        transition: all 500ms ease-in-out;
+    }
+    .nav2 .sec-center{
+        margin-left: 10px;
+    }
+    .nav2 .sec3 a:nth-child(1){
+        display: none;
+    }
+    .nav2 .sec3 a:nth-child(2){
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .nav2 .sec-center img{
+        width:80%;
+    }
+    .nav2{
+        justify-content: end;
+    }
+    
+}
